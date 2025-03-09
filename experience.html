@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zakery Collins</title>
+    <link href="styling.css" rel="stylesheet"/>
+    <link rel="icon" href="resume_clipart.jpg"/>
+  </head>
+  <body>
+    <main>
+        <div class="nav-bar">
+            <p>Zakery Collins</p>
+            <a href="website.html" class="nav-button">Home</a>
+            <a href="experience.html" class="nav-button">Relevant Experience</a>
+            <a href="personal.html" class="nav-button" id="final-nav-button">Personal Life</a>
+        </div>
+        <div class="home-background">
+          <h1 class="home-headings">Education</h1>
+          <div style="display: flex; align-items: flex-start;">
+            <p class="basic-text" style="margin-right: 20px;">
+                I am pursuing my Master's in computer science at Arizona State University and plan to graduate in Spring 2025. Throughout my journey at ASU, I completed my Bachelor's
+                in computer science in Summer 2024 and have learned a lot through coursework and my Master's thesis.
+            </p>
+            <img src="Me grad.jpg" alt="Thesis Table" style="display: block; max-width: 50%; max-height: 500px; margin-right: 10%; object-fit: contain;">
+          </div>
+          <div style="display: flex; align-items: flex-start;">
+            <img src="Thesis table.PNG" alt="Thesis Table" style="max-width: 50%; height: auto; margin-left: 10%; margin-right: 20px;">
+            <p class="basic-text" style="margin-left: 0px;">
+                During my master's thesis, I have worked on improving the execution time of different tasks by using GPU-accelerated computing backed by 
+                NVIDIA's Cuda architecture. As you can see in the table on the right, I have been largely successful especially when working with large datasets where the
+                parallelism of the task can outweigh the memory transfer overhead of moving information and code to the GPU.
+            </p>
+          </div>
+          <h2 style="text-align: center;">Completed Coursework</h2>
+          <p style="text-align: center;">Click the courses to learn more (p.s. computer graphics has a cool javascript demo)</p>
+          <div style="display: flex; align-items: stretch; width: 50%; margin-left: 25%">
+            <div class="classes-background">
+                <a href="" class="class-button" id="cloud" onclick="cloud_handler(event)">CSE546 Cloud Computing</a>
+                <a href="" class="class-button" id="graphics" onclick="graphics_handler(event)">CSE470 Computer Graphics</a>
+                <a href="" class="class-button" id="networks" onclick="network_handler(event)">CSE434 Computer Networks</a>
+                <a href="" class="class-button" id="data_mining" onclick="data_mining_handler(event)">CSE572 Data Mining</a>
+                <a href="" class="class-button" id="data_structures" onclick="data_structures_handler(event)">CSE310 Data Structures and Algorithms</a>
+                <a href="" class="class-button" id="distributed_software" onclick="distributed_software_handler(event)">CSE445 Distributed Software Development</a>
+                <a href="" class="class-button" id="machine_learning" onclick="machine_learning_handler(event)">CSE475 Foundations of Machine Learning</a>
+                <a href="" class="class-button" id="hci" onclick="hci_handler(event)">CSE463 Intro Human Computer Interaction</a>
+                <a href="" class="class-button" id="krr" onclick="krr_handler(event)">CSE579 Knowledge Representation and Reasoning</a>
+                <a href="" class="class-button" id="mobile" onclick="mobile_handler(event)">CSE535 Mobile Computing</a>
+                <a href="" class="class-button" id="os" onclick="os_handler(event)">CSE330 Operating Systems</a>
+                <a href="" class="class-button" id="blockchain" onclick="blockchain_handler(event)">CSE598 Topic: Engineering Blockchain Applications</a>
+                <a href="" class="class-button" id="quantum" onclick="quantum_handler(event)">CSE598 Topic: Quantum Computation</a>
+            </div>
+            <div class="class-description-background" id="class-description-background"><p id="class-description"></p><a id="class-link"></a></div>
+            <canvas id="gl-canvas"></canvas>
+            <script type="text/javascript" src="experience.js"></script>
+          </div>
+          <h1 class="home-headings">Industry</h1>
+          <div style="display: flex; align-items: flex-start;">
+            <img src="headshot.jpeg" style="flex: 1; width: 33%; margin-left: 10%;"><p style="flex: 1;">In Summer 2022 and 2023, I completed software engineering internships for The Home Depot. I got valuable experience
+              making Golang APIs, uploading these APIs to cloud services, and securing these APIs using a token system. In 2022, I developed an API to authorize check payments
+              making the system faster, more secure, and more resilient to upstream and downstream changes. In 2023, I developed another Golang API to store health and location data
+              for IT field to track PINpads and decide which ones need to be replaced.
+            </p><img src="Me2.jpeg" style="flex: 1; width: 33%; margin-right: 10%;">
+          </div>
+          <div style="display: flex; align-items: flex-start;">
+            <img src="me fancy.jpg" style="flex: 1; width: 33%; margin-left: 10%;"><p style="flex: 1;">During the Summer of 2024, I completed a software engineering internship for 
+              Intel Corporation in Hillsboro, Oregon. During this internship, I was able to work on a computer vision project and optimize the deployment for lower computing power
+              systems. I decoupled docker containers to minimize their size and allow for customizable deployment and created startup scripts for each docker container to control the
+              memory usage inside each docker container by minimizing files, python packages, and more.
+            </p><img src="Intel Pic.jpg" style="flex: 1; width: 33%; margin-right: 10%;">
+          </div>        
+        </div>
+    </main>
+  </body>
+</html>

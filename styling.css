@@ -94,3 +94,81 @@ body{
 .dog-pics{
     width: 20%;
 }
+
+@media (max-width: 1024px) {
+
+    .nav-bar {
+      height: auto;
+      line-height: 1.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+      text-align: center;
+    }
+  
+    .nav-bar p {
+      font-size: 32px;
+      margin: 5px 0;
+    }
+  
+    .nav-button {
+      font-size: 18px;
+      display: block;
+      margin: 5px 0;
+    }
+  
+    .home-background {
+      width: 95%;
+      margin-top: 18vh;
+      padding: 10px;
+    }
+  
+    .basic-text {
+      font-size: 16px;
+      margin: 5% 5%;
+    }
+  
+    .home-headings {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    .resume-img {
+      width: 90%;
+    }
+  
+    .dog-pics {
+      width: 80%;
+      margin: 10px auto !important;
+      display: block;
+    }
+  
+    .classes-background {
+      grid-template-columns: 1fr; /* Stack vertically */
+      padding: 10px;
+    }
+  
+    .class-description-background {
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    #gl-canvas {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 10px;
+    }
+  
+    /* For side-by-side elements like images + text */
+    div[style*="display: flex"] {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+  
+    div[style*="display: flex"] > img,
+    div[style*="display: flex"] > p {
+      width: 90% !important;
+      margin: 10px 0 !important;
+    }
+  }
